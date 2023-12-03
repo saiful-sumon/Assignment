@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <!--------- start header section ---------->
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./images/ssl-removebg-preview.png" class="logo" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Frontend Web Developer</p>
+                <h1>Hi, I am <span>Saiful Islam</span><br>From Bangladesh</h1>
+            </div>
+        </div>
+    </div>
+
+    <!---------- End header section ---------->
+
+
+    <!--------- start about section ---------->
+
+    <div id="about">
+        <h1>About Me</h1>
+        <hr class="hr_design">
+        <div class="content">
+            <div class="about-info">
+                <h3>Frontend Web Developer</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores eos officiis, doloremque iste quo hic doloribus sit minima consequuntur aspernatur officia dolor assumenda voluptates voluptatum labore in totam. Tempore, aspernatur.</p>
+                <a href="./images/my-cv.pdf" class="btn btn2" download="" >Download CV</a>
+            </div>
+
+            <div class="skills">
+                <h3>My Skills</h3>
+                <p>HTML</p>
+                <div class="s_content">
+                    <div class="html skillset">90%</div>
+                </div>
+
+                <p>CSS</p>
+                <div class="s_content">
+                    <div class="css skillset">85%</div>
+                </div>
+
+                <p>javaScript</p>
+                <div class="s_content">
+                    <div class="javascript skillset">80%</div>
+                </div>
+
+                <p>React Js</p>
+                <div class="s_content">
+                    <div class="react skillset">88%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!------- start service section --------->
+
+    <div id="services">
+
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum sit hic, laboriosam natus iure distinctio unde facilis dolorum quos voluptatibus.</p>
+                    <a href="">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum sit hic, laboriosam natus iure distinctio unde facilis dolorum quos voluptatibus.</p>
+                    <a href="">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum sit hic, laboriosam natus iure distinctio unde facilis dolorum quos voluptatibus.</p>
+                    <a href="">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!------------ start portfolio section ------------>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <!-- <hr class="hr_design"> -->
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/work-1.png" alt="">
+                </div>
+
+                <div class="work">
+                    <img src="./images/work-2.png" alt="">
+                </div>
+
+                <div class="work">
+                    <img src="./images/work-3.png" alt="">
+                </div>
+            </div>
+        </div>
+        <a class="btn" href="#">See More</a>
+    </div>
+
+
+    <!-- ---------contact start-------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i>contact@example.yahoo.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i>0123456789</p>
+                    <div class="social-icon">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://twitter.com/"><i class="fa-brands fa-square-x-twitter"></i></i></a>
+                        <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+
+                    <a href="./images/my-cv.pdf" download="" class="btn btn2">Download</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="name" placeholder="Your Name">
+                        <input type="email" name="email" placeholder="Email Address">
+                        <textarea name="msg" rows="6" placeholder="Write your message"></textarea>
+                        <button type="submit" class="btn btn3">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------- start footer -------- -->
+
+    <footer>
+        <p>All right reserved <span style="color: #ff004f;">&copy</span> Saiful Islam</p>
+    </footer>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+
+    </script>
+    
+</body>
+</html>
